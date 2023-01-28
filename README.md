@@ -18,6 +18,12 @@ These are my dotfiles on [Arch Linux](https://archlinux.org/). I did this by rea
 • [Pavucontrol](https://archlinux.org/packages/extra/x86_64/pavucontrol/). Audio control.  
 • [Waterfox](https://aur.archlinux.org/packages/waterfox-g5-bin). Open source browser based on Firefox.  
 • [Spotify](https://aur.archlinux.org/packages/spotify). Songs 🎵.  
+• [Feh](https://wiki.archlinux.org/title/Feh). Set wallpaper.
 # Installation 
-
+First install the dependencies. You can make use of the Arch package manager to install them. However, note that some dependencies are not in the additional repositories, but in the [AUR](https://aur.archlinux.org/)(Arch User Repository). You can clone via git and use the [makepkg](https://wiki.archlinux.org/title/Makepkg) script to install those not found in the official repositories. That would be one way, and the other is the one I recommend. Use an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) since these install packages obtained in the official repositories and also from the AUR if they are not in the first mentioned ones. In this case you can use [yay](https://aur.archlinux.org/packages/yay). To install this AUR helper you just need to have git installed and use the makepkg script.  
+```  
+git clone https://aur.archlinux.org/yay.git  
+cd yay  
+makepkg -si  
+```
 
