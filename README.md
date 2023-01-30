@@ -24,7 +24,7 @@ You must take into account that depending on your internet device you will have 
 • [Pavucontrol](https://archlinux.org/packages/extra/x86_64/pavucontrol/). Audio control.  
 • [Waterfox](https://aur.archlinux.org/packages/waterfox-g5-bin). Open source browser based on Firefox.  
 • [Spotify](https://aur.archlinux.org/packages/spotify). Songs 🎵.  
-• [Feh](https://wiki.archlinux.org/title/Feh). Set wallpaper.
+• [Feh](https://wiki.archlinux.org/title/Feh). Set wallpaper.  
 • [Iosevka-Nerd](https://archlinux.org/packages/community/any/ttf-iosevka-nerd/). Font.  
 • [Nordzy-Cursors](https://aur.archlinux.org/packages/nordzy-cursors). Cursors.  
 # 💿 Installation 
@@ -57,4 +57,4 @@ Once all this is done, you can change the shell with the [chsh](https://man.arch
 chsh -l  
 chsh -s /bin/fish  
 ```  
-And finally install [Oh-My-Fish!](https://github.com/oh-my-fish/oh-my-fish) and install theme [boxfish](https://github.com/oh- my-fish/oh-my-fish/blob/master/docs/Themes.md#boxfish). Done.
+And finally install [Oh-My-Fish!](https://github.com/oh-my-fish/oh-my-fish) and install theme [boxfish](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#boxfish). Done.
