@@ -52,6 +52,14 @@ sudo cp -r config/termite/ ~/.config/
 sudo cp config/betterlockscreenrc ~/.config/
 sudo cp config/default/ ~/.icons/
 ```  
+To avoid problems, grant execution permissions to the scripts.  
+```  
+sudo chmod +x config/bspwm/scripts/external_rules
+sudo chmod +x config/bspwm/scripts/Launch
+sudo chmod +x config/bspwm/scripts/Temperature.sh
+sudo chmod +x config/bspwm/scripts/updates.sh
+sudo chmod +x config/bspwm/theme/powermenu/powermenu.sh  
+```  
 Once all this is done, you can change the shell with the [chsh](https://man.archlinux.org/man/chsh.1.en) command.  
 ``` 
 chsh -l  
