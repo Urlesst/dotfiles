@@ -1,6 +1,8 @@
 # 🔎 Dotfiles
 My dotfiles :)  
 These are my dotfiles on [Arch Linux](https://archlinux.org/). I did this by reading the official documentation, taking examples from other dotfiles and modifying them to my personal taste. Mainly based on the theme Isabel by [gh0stzk](https://github.com/gh0stzk/dotfiles).
+# 🖼️ Gallery 
+ <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/home.png" alt="Rice" title="Home" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/cava.png" alt="Rice" title="cava" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/rice.png" alt="Rice" title="rice" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/normal.png" alt="Rice" title="Normal" width="75%" height="75%">
 # 📚 Dependencies 
 • [BSPWM](https://wiki.archlinux.org/title/Bspwm). Used as windows manager.  
 • [Polybar](https://polybar.github.io/). Bar  
