@@ -50,5 +50,5 @@ function apps() {
 	#nitrogen --restore &
 	xsetroot -cursor_name left_ptr
     launch dunst -conf ~/.config/bspwm/dunst
-	
+    launch betterlockscreen -u ~/.config/bspwm/theme/wallpaper.png	
 }
