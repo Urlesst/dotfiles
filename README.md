@@ -4,7 +4,7 @@ These are my dotfiles on [Arch Linux](https://archlinux.org/). I did this by rea
 # 📚 Recommendations  
 This configuration is recommended for computers that use Wi-Fi connection and have aresolution of  ```1366x768``` because it was built under that resolution, so it is perfect in that resolution.
 
-You must take into account that depending on your internet device you will have to modify the modules.ini of the polybar, specifically the internet module. Generally the device is called as ```wlan```, but this is not always the case. If your device has another name you can confirm it with the command [ip link](https://man.archlinux.org/man/ip-link.8.en) and modify the internet module accordingly.
+You must take into account that depending on your internet device you will have to modify the modules.ini of the polybar, specifically the internet module. Generally the device is called as ```wlan0```, but this is not always the case. If your device has another name you can confirm it with the command [ip link](https://man.archlinux.org/man/ip-link.8.en) and modify the internet module accordingly.
 # 🖼️ Gallery 
  <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/home.png" alt="Rice" title="Home" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/cava.png" alt="Rice" title="cava" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/rice.png" alt="Rice" title="rice" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/normal.png" alt="Rice" title="Normal" width="75%" height="75%">
 # 📚 Dependencies 
@@ -25,6 +25,8 @@ You must take into account that depending on your internet device you will have 
 • [Waterfox](https://aur.archlinux.org/packages/waterfox-g5-bin). Open source browser based on Firefox.  
 • [Spotify](https://aur.archlinux.org/packages/spotify). Songs 🎵.  
 • [Feh](https://wiki.archlinux.org/title/Feh). Set wallpaper.
+• [Iosevka-Nerd](https://archlinux.org/packages/community/any/ttf-iosevka-nerd/). Font.  
+• [Nordzy-Cursors](https://aur.archlinux.org/packages/nordzy-cursors). Cursors.  
 # 💿 Installation 
 First install the dependencies. You can make use of the Arch package manager to install them. However, note that some dependencies are not in the additional repositories, but in the [AUR](https://aur.archlinux.org/)(Arch User Repository). You can clone via git and use the [makepkg](https://wiki.archlinux.org/title/Makepkg) script to install those not found in the official repositories. That would be one way, and the other is the one I recommend. Use an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) since these install packages obtained in the official repositories and also from the AUR if they are not in the first mentioned ones. In this case you can use [yay](https://aur.archlinux.org/packages/yay). To install this AUR helper you just need to have git installed and use the makepkg script.  
 ```  
@@ -54,4 +56,5 @@ Once all this is done, you can change the shell with the [chsh](https://man.arch
 ``` 
 chsh -l  
 chsh -s /bin/fish  
-```
+```  
+And finally install [Oh-My-Fish!](https://github.com/oh-my-fish/oh-my-fish) and install theme [boxfish](https://github.com/oh- my-fish/oh-my-fish/blob/master/docs/Themes.md#boxfish). Done.
