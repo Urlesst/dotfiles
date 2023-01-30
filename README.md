@@ -1,6 +1,10 @@
 # 🔎 Dotfiles
 My dotfiles :)  
-These are my dotfiles on [Arch Linux](https://archlinux.org/). I did this by reading the official documentation, taking examples from other dotfiles and modifying them to my personal taste. Mainly based on the theme Isabel by [gh0stzk](https://github.com/gh0stzk/dotfiles).
+These are my dotfiles on [Arch Linux](https://archlinux.org/). I did this by reading the official documentation, taking examples from other dotfiles and modifying them to my personal taste. Mainly based on the theme Isabel by [gh0stzk](https://github.com/gh0stzk/dotfiles).  
+# 📚 Recommendations  
+This configuration is recommended for computers that use Wi-Fi connection and have aresolution of  ```1366x768``` because it was built under that resolution, so it is perfect in that resolution.
+
+You must take into account that depending on your internet device you will have to modify the modules.ini of the polybar, specifically the internet module. Generally the device is called as ```wlan```, but this is not always the case. If your device has another name you can confirm it with the command [ip link](https://man.archlinux.org/man/ip-link.8.en) and modify the internet module accordingly.
 # 🖼️ Gallery 
  <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/home.png" alt="Rice" title="Home" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/cava.png" alt="Rice" title="cava" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/rice.png" alt="Rice" title="rice" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/normal.png" alt="Rice" title="Normal" width="75%" height="75%">
 # 📚 Dependencies 
@@ -16,7 +20,7 @@ These are my dotfiles on [Arch Linux](https://archlinux.org/). I did this by rea
 • [Picom](https://wiki.archlinux.org/title/Picom). Compositor.      
 • [Xfce4-screenshooter](https://archlinux.org/packages/extra/x86_64/xfce4-screenshooter/), [Xfce4-settings](https://archlinux.org/packages/extra/x86_64/xfce4-settings/) and [Thunar](https://wiki.archlinux.org/title/Thunar). Xfce used.  
 • [Betterlockscreen](https://github.com/betterlockscreen/betterlockscreen). Screen locker.  
-• [Fish](https://fishshell.com/). Shell
+• [Fish](https://fishshell.com/). Shell  
 • [Pavucontrol](https://archlinux.org/packages/extra/x86_64/pavucontrol/). Audio control.  
 • [Waterfox](https://aur.archlinux.org/packages/waterfox-g5-bin). Open source browser based on Firefox.  
 • [Spotify](https://aur.archlinux.org/packages/spotify). Songs 🎵.  
@@ -30,10 +34,24 @@ makepkg -si
 ```  
 Once yay is installed you can proceed to install the dependencies.  
 ```
-yay -S bspwm polybar sxhkd dunst rofi networkmanager-dmenu-git termite checkupdates+aur playerctl picom xfce4-screenshooter xfce4-settings betterlockscreen fish pavucontrol waterfox spotify feh  
-```
+yay -S bspwm polybar sxhkd dunst rofi networkmanager-dmenu-git termite checkupdates+aur playerctl picom xfce4-screenshooter xfce4-settings betterlockscreen fish pavucontrol waterfox spotify feh nordzy-cursors ttf-iosevka-nerd    
+```  
 With the dependencies ready, you should clone this repository.
+```  
+git clone https://github.com/Urlesst/dotfiles.git
+```    
+Now just copy the corresponding content inside .config (make sure the .config and .icons folder exists).  
+```  
+cd dotfiles
+sudo cp -r config/bspwm/ ~/.config/
+sudo cp -r config/neofetch/ ~/.config/
+sudo cp -r config/networkmanager-dmenu/ ~/.config/
+sudo cp -r config/termite/ ~/.config/
+sudo cp config/betterlockscreenrc ~/.config/
+sudo cp config/default/ ~/.icons/
+```  
+Once all this is done, you can change the shell with the [chsh](https://man.archlinux.org/man/chsh.1.en) command.  
 ``` 
-git clone https://github.com/Urlesst/dotfiles
+chsh -l  
+chsh -s /bin/fish  
 ```
-
