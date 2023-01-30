@@ -57,4 +57,4 @@ Once all this is done, you can change the shell with the [chsh](https://man.arch
 chsh -l  
 chsh -s /bin/fish  
 ```  
-And finally install [Oh-My-Fish!](https://github.com/oh-my-fish/oh-my-fish) and install theme [boxfish](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#boxfish). Done.
+And finally install [Oh-My-Fish!](https://github.com/oh-my-fish/oh-my-fish) and install theme [boxfish](https://github.com/oh-my-fish/oh-my-fish/blob/master/docs/Themes.md#boxfish). In your [display manager](https://wiki.archlinux.org/title/Display_manager) select BSPWM session and done.
