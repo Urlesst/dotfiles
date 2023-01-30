@@ -2,9 +2,9 @@
 My dotfiles :)  
 These are my dotfiles on [Arch Linux](https://archlinux.org/). I did this by reading the official documentation, taking examples from other dotfiles and modifying them to my personal taste. Mainly based on the theme Isabel by [gh0stzk](https://github.com/gh0stzk/dotfiles).  
 # 📚 Recommendations  
-This configuration is recommended for computers that use Wi-Fi connection and have aresolution of  ```1366x768``` because it was built under that resolution, so it is perfect in that resolution.
+This configuration is recommended for computers that use Wi-Fi connection and have a resolution of  ```1366x768``` because it was built under that resolution, so it is perfect in that resolution.
 
-You must take into account that depending on your internet device you will have to modify the modules.ini of the polybar, specifically the internet module. Generally the device is called as ```wlan0```, but this is not always the case. If your device has another name you can confirm it with the command [ip link](https://man.archlinux.org/man/ip-link.8.en) and modify the internet module accordingly.
+You must take into account that depending on your internet device you will have to modify the modules.ini of the polybar, specifically the network module. Generally the device is called as ```wlan0```, but this is not always the case. If your device has another name you can confirm it with the command [ip link](https://man.archlinux.org/man/ip-link.8.en) and modify the network module accordingly.
 # 🖼️ Gallery 
  <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/home.png" alt="Rice" title="Home" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/cava.png" alt="Rice" title="cava" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/rice.png" alt="Rice" title="rice" width="75%" height="75%"> <img src="https://github.com/Urlesst/dotfiles/blob/master/assets/normal.png" alt="Rice" title="Normal" width="75%" height="75%">
 # 📚 Dependencies 
