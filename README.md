@@ -27,6 +27,7 @@ You must take into account that depending on your internet device you will have 
 • [Feh](https://wiki.archlinux.org/title/Feh). Set wallpaper.  
 • [Iosevka-Nerd](https://archlinux.org/packages/community/any/ttf-iosevka-nerd/). Font.  
 • [Nordzy-Cursors](https://aur.archlinux.org/packages/nordzy-cursors). Cursors.  
+• [Neofetch](https://archlinux.org/packages/community/any/neofetch/). System information.
 # 💿 Installation 
 First install the dependencies. You can make use of the Arch package manager to install them. However, note that some dependencies are not in the additional repositories, but in the [AUR](https://aur.archlinux.org/)(Arch User Repository). You can clone via git and use the [makepkg](https://wiki.archlinux.org/title/Makepkg) script to install those not found in the official repositories. That would be one way, and the other is the one I recommend. Use an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers) since these install packages obtained in the official repositories and also from the AUR if they are not in the first mentioned ones. In this case you can use [yay](https://aur.archlinux.org/packages/yay). To install this AUR helper you just need to have git installed and use the makepkg script.  
 ```  
@@ -36,7 +37,7 @@ makepkg -si
 ```  
 Once yay is installed you can proceed to install the dependencies.  
 ```
-yay -S bspwm polybar sxhkd dunst rofi networkmanager-dmenu-git termite checkupdates+aur playerctl picom xfce4-screenshooter xfce4-settings betterlockscreen fish pavucontrol waterfox spotify feh nordzy-cursors ttf-iosevka-nerd    
+yay -S bspwm polybar sxhkd dunst rofi networkmanager-dmenu-git termite checkupdates-aur playerctl picom xfce4-screenshooter xfce4-settings betterlockscreen fish pavucontrol waterfox-g5-bin spotify feh nordzy-cursors ttf-iosevka-nerd neofetch      
 ```  
 With the dependencies ready, you should clone this repository.
 ```  
@@ -54,11 +55,11 @@ sudo cp config/default/ ~/.icons/
 ```  
 To avoid problems, grant execution permissions to the scripts.  
 ```  
-sudo chmod +x config/bspwm/scripts/external_rules
-sudo chmod +x config/bspwm/scripts/Launch
-sudo chmod +x config/bspwm/scripts/Temperature.sh
-sudo chmod +x config/bspwm/scripts/updates.sh
-sudo chmod +x config/bspwm/theme/powermenu/powermenu.sh  
+sudo chmod +x ~/.config/bspwm/scripts/external_rules
+sudo chmod +x ~/.config/bspwm/scripts/Launch
+sudo chmod +x ~/.config/bspwm/scripts/Temperature.sh
+sudo chmod +x ~/.config/bspwm/scripts/updates.sh
+sudo chmod +x ~/.config/bspwm/theme/powermenu/powermenu.sh  
 ```  
 Once all this is done, you can change the shell with the [chsh](https://man.archlinux.org/man/chsh.1.en) command.  
 ``` 
